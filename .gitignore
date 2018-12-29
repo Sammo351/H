@@ -1,2 +1,9 @@
 Library/
 Temp/
+Assembly-CSharp-Editor-firstpass.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp.csproj
+.vscode/settings.json
+Hackers 3.0.sln
+obj/

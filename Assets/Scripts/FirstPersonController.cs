@@ -6,6 +6,8 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour
 {
     private CharacterController _characterController;
+    public Animator ThirdPersonAnimator;
+
 
     [Header("Movement Stats")]
     public float MovementSpeed = 5f;
@@ -52,12 +54,16 @@ public class FirstPersonController : MonoBehaviour
 
         HandleGravity();
         HandleCrouching();
-
+        SyncAnimationStates();
         DoMovement(h, v, sprint);
 
     }
 
-
+    private void SyncAnimationStates()
+    {
+        ThirdPersonAnimator.SetBool("Crouching", states.IsCrouching);
+        ThirdPersonAnimator.SetBool("Sprinting", states.IsSprinting);
+    }
 
     private void HandleGravity()
     {
@@ -112,6 +118,8 @@ public class FirstPersonController : MonoBehaviour
 
         if (states.IsCrouching && !crouch && CanStandUp())
             states.IsCrouching = false;
+
+        
     }
 
 
@@ -139,6 +147,8 @@ public class FirstPersonController : MonoBehaviour
         }
 
         _characterController.Move(motion);
+        ThirdPersonAnimator.SetFloat("Strafe X", transform.InverseTransformDirection(motion).normalized.x * 5f, 0.2f, Time.deltaTime);
+        ThirdPersonAnimator.SetFloat("Strafe Y", transform.InverseTransformDirection(motion).normalized.z * 5f, 0.2f, Time.deltaTime);
     }
 
 
@@ -170,8 +180,8 @@ public class FirstPersonController : MonoBehaviour
         RaycastHit hit;
 
         Vector3 center = transform.position + (_characterController.center * 2);
-        
-        
+
+
         if (Physics.Raycast(new Ray(center, Vector3.up), out hit, StandingHeight))
         {
             Debug.Log(hit.transform.name);
