@@ -15,6 +15,8 @@ public class Door : InteractionObject
     public float PositionSpeed = 5f;
     public float RotationSpeed = 5f;
 
+    public Door[] SubDoors;
+
 
     [ContextMenu("Set Open")]
     void SetOpen()
@@ -36,6 +38,11 @@ public class Door : InteractionObject
     {
         base.OnInteraction(system);
         _open = !_open;
+        if(!_open)
+        {
+            foreach(Door d in SubDoors)
+                d._open = false;
+        }
     }
 
     private void Update()

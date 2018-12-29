@@ -147,8 +147,8 @@ public class FirstPersonController : MonoBehaviour
         }
 
         _characterController.Move(motion);
-        ThirdPersonAnimator.SetFloat("Strafe X", transform.InverseTransformDirection(motion).normalized.x * 5f, 0.2f, Time.deltaTime);
-        ThirdPersonAnimator.SetFloat("Strafe Y", transform.InverseTransformDirection(motion).normalized.z * 5f, 0.2f, Time.deltaTime);
+        ThirdPersonAnimator.SetFloat("Strafe X", transform.InverseTransformDirection(motion).normalized.x * 5f, 0.01f, Time.deltaTime);
+        ThirdPersonAnimator.SetFloat("Strafe Y", transform.InverseTransformDirection(motion).normalized.z * 5f, 0.01f, Time.deltaTime);
     }
 
 
