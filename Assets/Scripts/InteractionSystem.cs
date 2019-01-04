@@ -6,7 +6,8 @@ public class InteractionSystem : MonoBehaviour
 {
     public FirstPersonCamera Camera;
     public float InteractionDistance = 3f;
-    
+
+    InteractionHighlight lastHighlight;
 
     private void Update()
     {
@@ -15,25 +16,46 @@ public class InteractionSystem : MonoBehaviour
         if (Physics.Raycast(Camera.transform.position, Camera.transform.forward, out hit, InteractionDistance))
         {
             if (hit.transform.gameObject.GetComponent<InteractionObject>())
-            {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    var iObj = hit.transform.gameObject.GetComponent<InteractionObject>();
-                    iObj.OnInteraction(this);
-                }
-            }
+                HandleInteraction(hit.transform.gameObject.GetComponent<InteractionObject>());
             else
-            {
                 if (hit.transform.gameObject.GetComponentInParent<InteractionObject>())
-                {
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        var iObj = hit.transform.gameObject.GetComponentInParent<InteractionObject>();
-                        iObj.OnInteraction(this);
-                    }
-                }
-            }
+                HandleInteraction(hit.transform.gameObject.GetComponentInParent<InteractionObject>());
+            else
+                HandleInteraction(null);
+
         }
+        else
+            HandleInteraction(null);
 
     }
+
+    void HandleInteraction(InteractionObject io)
+    {
+        if (io == null && lastHighlight != null)
+        {
+            lastHighlight.StopHighlighting();
+            lastHighlight = null;
+        }
+
+        if (io == null)
+            return;
+
+        if (io.GetComponent<InteractionHighlight>())
+        {
+            var highlight = io.GetComponent<InteractionHighlight>();
+
+            if (lastHighlight != null && lastHighlight != highlight)
+                lastHighlight.StopHighlighting();
+
+            lastHighlight = highlight;
+            lastHighlight.Highlight();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            io.OnInteraction(this);
+        }
+    }
+
+
 }
