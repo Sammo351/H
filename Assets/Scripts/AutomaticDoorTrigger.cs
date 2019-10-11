@@ -9,13 +9,16 @@ public class AutomaticDoorTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ItemsInBox++;
+        if (other.gameObject.layer == LayerMask.NameToLayer("Actor"))
+            ItemsInBox++;
         ControlDoors();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        ItemsInBox--;
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Actor"))
+            ItemsInBox--;
         ControlDoors();
     }
 

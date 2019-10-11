@@ -12,7 +12,8 @@ public class InteractionHighlight : MonoBehaviour
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        if(renderer == null)
+            renderer = GetComponent<Renderer>();
         defaultColor = renderer.material.GetColor("_BaseColor");
     }
 

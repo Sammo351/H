@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5885872733917175738}
+  - component: {fileID: 5405229702634484477}
   m_Layer: 0
   m_Name: Double Wall Ground Interior
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5405229702634484477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6667723265732040398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.998268, y: 3.0086012, z: 0.19573402}
+  m_Center: {x: -0.0029058456, y: 1.5000801, z: 0.0061864853}
 --- !u!1001 &4838867493737633974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39,14 +53,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5885872733917175738}
     m_Modifications:
-    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
-      propertyPath: m_Name
-      value: SM_Env_Wall_Interior_Ground_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 471746, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -91,6 +97,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
+      propertyPath: m_Name
+      value: SM_Env_Wall_Interior_Ground_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
 --- !u!4 &4838867493737835124 stripped
@@ -106,14 +120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5885872733917175738}
     m_Modifications:
-    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
-      propertyPath: m_Name
-      value: SM_Env_Wall_Interior_Ground_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 471746, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -157,6 +163,14 @@ PrefabInstance:
     - target: {fileID: 471746, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
+      propertyPath: m_Name
+      value: SM_Env_Wall_Interior_Ground_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}

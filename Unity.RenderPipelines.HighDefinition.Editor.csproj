@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D5467277-2D5F-764A-2481-9E69ED57B961}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Unity.RenderPipelines.HighDefinition.Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_0;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;UNITY_POST_PROCESSING_STACK_V2;REALTIME_RAYTRACING_SUPPORT;ENABLE_RAYTRACING;NET_4_6;HDRP_1_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Unity\2019.3.0b3\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:\Unity\2019.3.0b3\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\AssetProcessors\CubeLutImporter.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\AssetProcessors\NormalMapFilteringTexturePostprocessor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\BuildProcessors\HDRPPreprocessBuild.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\BuildProcessors\HDRPPreprocessShaders.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Core\TextureCombiner\TextureCombiner.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\DefaultScene\HDProjectSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\DefaultScene\HDRPWizard.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\DefaultScene\HDSceneManagement.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\AdditionalShadowDataEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\AmbientOcclusionEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\DiffusionProfileOverrideEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDAdditionalLightDataEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightExplorerExtension.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightUI.ContextualMenu.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightUI.Handles.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\HDLightUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\IndirectLightingControllerEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Light\HDAdditionalLightDataEditorExtension.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\CameraSettingsUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDAdditionalReflectionDataEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDBakedReflectionSystem.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDCubemapInspector.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeUI.ContextualMenu.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeUI.Handles.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDProbeUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.Gizmos.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.Preview.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.ProbeUtility.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\HDScreenSpaceReflectionEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\PlanarReflectionProbeEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\ProbeSettingsUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\ReflectionMenuItem.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\ScreenSpaceRefractionEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\SerializedCameraSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\SerializedHDProbe.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\SerializedHDReflectionProbe.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\SerializedPlanarReflectionProbe.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\SerializedProbeSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Gizmos.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Handles.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\ProxyVolumeUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\ReflectionProxyVolumeComponentEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\SerializedInfluenceVolume.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\SerializedProxyVolume.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\Volume\SerializedReflectionProxyVolumeComponent.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\SerializedHDLight.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Shadow\ContactShadowsEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Shadow\HDShadowSettingsEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Shadow\ShadowCascadeGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\DensityVolumeEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\DensityVolumeTextureTool.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\DensityVolumeUI.Drawer.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\DensityVolumeUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\SerializedDensityVolume.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\VolumetricLightingControllerEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\VolumetricLighting\VolumetricMenuItem.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\AxF\AxFGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\AxF\AxFShaderPreprocessor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\BaseShaderPreprocessor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\DecalMenuItems.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\DecalProjectorEditor.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\DecalProjectorEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\DecalUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\CreateDecalShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\DecalGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\DecalMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\DecalSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\DecalSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Decal\ShaderGraph\IDecalSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\DiffusionProfile\DiffusionProfileMaterialUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\DiffusionProfile\DiffusionProfileSettingsEditor.Styles.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\DiffusionProfile\DiffusionProfileSettingsEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\CreateFabricShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\FabricGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\FabricMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\FabricSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\FabricSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Fabric\ShaderGraph\IFabricSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\CreateHairShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\HairGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\HairMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\HairSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\HairSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Hair\ShaderGraph\IHairSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\LayeredLit\LayeredLitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\BaseLitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\LitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\LitShaderPreprocessor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\CreateHDLitShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\HDLitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\HDLitMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\HDLitSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\HDLitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\ShaderGraph\IHDLitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Lit\StandardsToHDLitMaterialUpgrader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\MaterialEditorExtension.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\MaterialHeaderScope.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\PBR\HDPBRLit.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\PBR\ShaderGraph\HDPBRSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\CreateStackLitShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\IStackLitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\StackLitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\StackLitMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\StackLitSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\StackLit\ShaderGraph\StackLitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\TerrainLit\TerrainLitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\AdvancedOptionsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\AxfSurfaceInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\DecalSortingInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\DecalSurfaceInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\DetailInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\DistortionUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\EmissionUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\LayeringOptionsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\LayersUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\LitSurfaceInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\MaterialToCopyUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\MaterialUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\MaterialUIBlockList.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\RefractionUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\ShaderGraphUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\SurfaceOptionUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\TessellationOptionsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\TransparencyUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\UIBlocks\UnlitSurfaceInputsUIBlock.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\BaseUnlitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\HDShaderGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\CreateHDUnlitShaderGraph.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\HDUnlitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\HDUnlitMasterNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\HDUnlitSettingsView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\HDUnlitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\IHDUnlitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\UnlitSubShader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\ShaderGraph\UnlitUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\UnlitGUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\Unlit\UnlitsToHDUnlitUpgrader.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\BloomEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\ChannelMixerEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\ColorCurvesEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\DepthOfFieldEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\ExposureEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\FilmGrainEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\LiftGammaGainEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\MotionBlurEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\SerializedGlobalPostProcessSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\ShadowsMidtonesHighlightsEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\TonemappingEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\TrackballUIDrawer.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\VignetteEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\BaseUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\HDAdditionalCameraEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\HDCameraEditor.Handlers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\HDCameraEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\HDCameraUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\HDCameraUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Camera\SerializedHDCamera.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDAssetFactory.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDBaseEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDEditorCLI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDEditorUtils.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDRenderPipelineEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDRenderPipelineMenuItems.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDRenderPipelineUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\HDRenderPipelineUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\IUpdateable.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Raytracing\GlobalIlluminationEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Raytracing\HDRaytracingEnvironmentInspector.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Raytracing\RecursiveRenderingEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Raytracing\SerializedHDRaytracingEnvironment.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\DefaultSettingsPanel.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\DiffusionProfileSettingsListUI.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\EditorDefaultSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\FrameSettingsUI.Drawers.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\FrameSettingsUI.Skin.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\OverridableFrameSettingsArea.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\QualitySettingsPanel.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedDynamicResolutionSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedFrameSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedGlobalDecalSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedGlobalLightLoopSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedHDRenderPipelineAsset.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedHDShadowInitParameters.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedLowResTransparencySettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipeline\Settings\SerializedRenderPipelineSettings.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\DefaultMaterialSlot.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\HDSubShaderUtilities.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Nodes\DiffusionProfileNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Nodes\EmissionNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Nodes\ExposureNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Nodes\HDSceneColorNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Nodes\ParallaxOcclusionMappingNode.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Slots\DiffusionProfileInputMaterialSlot.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Views\DiffusionProfileSlotControlView.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\AtmosphericScattering\AtmosphericScatteringEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\AtmosphericScattering\ExponentialFogEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\AtmosphericScattering\LinearFogEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\AtmosphericScattering\VolumetricFogEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\GradientSky\GradientSkyEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\HDLightingWindowEnvironmentSection.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\HDRISky\HDRISkyEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\PhysicallyBasedSky\PhysicallyBasedSkyEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\SkySettingsEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\StaticLightingSkyEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Sky\VisualEnvironmentEditor.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Upgraders\UpgradeMenuItem.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Upgraders\UpgradeStandardShaderMaterials.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXAbstractDistortionOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXAbstractParticleHDRPLitOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXDistortionMeshOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXDistortionQuadOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXLitCubeOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXLitMeshOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXLitPlanarPrimitiveOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXLitQuadStripOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\Outputs\VFXLitSphereOutput.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\VFXHDRPBinder.cs" />
+     <Compile Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\VFXGraph\VFXHDRPSubOutput.cs" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\HDRPEditorLight.uss" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\DiffusionProfile\DrawDiffusionProfile.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\Shaders\CurveBackground.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\SharedCode.template.hlsl" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\ReflectionProbesPreview.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Core\TextureCombiner\TextureCombiner.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\HDRPEditor.uss" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\Resources\DiffusionProfileSlotControlView.uss" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Material\DiffusionProfile\DrawTransmittanceGraph.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\Shaders\TrackballEditor.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Lighting\Reflection\PlanarReflectionProbesPreview.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\Unity.RenderPipelines.HighDefinition.Editor.asmdef" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\RenderPipelineResources\Shaders\GUITextureBlit2SRGB.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\HDRPEditorDark.uss" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\Shaders\CustomTonemapperCurve.shader" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\ShaderGraph\VertexAnimation.template.hlsl" />
+     <None Include="E:\Documents\Unity Projects\Hackers - Git\Hackers 3.0\Library\PackageCache\com.unity.render-pipelines.high-definition@7.0.1\Editor\PostProcessing\Shaders\ShadowsMidtonesHighlightsCurves.shader" />
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.render-pipelines.core@7.0.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>E:/Documents/Unity Projects/Hackers - Git/Hackers 3.0/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CSharp">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Annotations">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http.Rtc">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.ILGeneration">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.Lightweight">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Duplex">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Http">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.NetTcp">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Primitives">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Security">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>E:/Unity/2019.3.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Runtime.csproj">
+      <Project>{697E584B-1508-7F54-D674-E11E75D2D6A0}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
+      <Project>{F01F167E-E31B-985B-8346-00C5E902523A}</Project>
+      <Name>Unity.ShaderGraph.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{1E9B3647-029A-DC58-C2B5-E65BEFB6DCAF}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
+      <Project>{6FDABF7C-D154-8DA2-92DE-391EF9F6E480}</Project>
+      <Name>Unity.RenderPipelines.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
+      <Project>{241B320F-9CE6-6306-9C68-D3C1B4F0F3A7}</Project>
+      <Name>Unity.VisualEffectGraph.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime.csproj">
+      <Project>{5CD34387-AB1C-583E-E279-F5C1BAA56473}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Config.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{9F341C11-136F-9B98-E3FD-60A72364F90A}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{847B6F0E-5A37-BD33-C465-41473295B5BE}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{52435725-87C1-E818-301C-6B44731C219F}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{798F42E0-0402-46B0-9EC8-275DB0E97072}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

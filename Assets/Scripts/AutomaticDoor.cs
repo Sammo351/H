@@ -10,10 +10,14 @@ public class AutomaticDoor : Door, IPowerReciever
 
     public PowerGrid powerGrid;
 
+    private AudioSource _audioSource;
+
+
 
     private void Start()
     {
         powerGrid.ConnectRecieverToGrid(this);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void CloseWithDelay(float t)

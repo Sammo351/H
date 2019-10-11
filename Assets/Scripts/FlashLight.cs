@@ -21,6 +21,8 @@ public class FlashLight : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
         spotlight.transform.position = transform.position;
         float noise = Mathf.PerlinNoise(Time.time, Time.time) * 10;
         Vector3 combinedNoise = (transform.right * noise) + (transform.up * noise);
@@ -28,5 +30,6 @@ public class FlashLight : MonoBehaviour
         noiseVec = Vector3.Lerp(noiseVec, combinedNoise * Time.deltaTime, 3f * Time.deltaTime);
 
         spotlight.transform.forward = Vector3.Lerp(spotlight.transform.forward, transform.forward + noiseVec, 10f * Time.deltaTime);
+        }
     }
 }

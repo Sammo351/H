@@ -33,6 +33,9 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 motion;
     private float groundedCooldown;
 
+    public LayerMask CrouchingLayerCheck;
+
+
 
     private void Start()
     {
@@ -182,7 +185,7 @@ public class FirstPersonController : MonoBehaviour
         Vector3 center = transform.position + (_characterController.center * 2);
 
 
-        if (Physics.Raycast(new Ray(center, Vector3.up), out hit, StandingHeight))
+        if (Physics.Raycast(new Ray(center, Vector3.up), out hit, StandingHeight, CrouchingLayerCheck))
         {
             Debug.Log(hit.transform.name);
             Debug.DrawRay(center, Vector3.up * StandingHeight, Color.green, 1f);

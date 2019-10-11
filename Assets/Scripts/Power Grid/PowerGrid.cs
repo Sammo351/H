@@ -9,8 +9,13 @@ public class PowerGrid : MonoBehaviour
     public bool DefaultOnState;
     public bool IsOn = false;
 
+    public AudioClip PowerOff;
+    private AudioSource _audioSource;
+
+
     private void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         if (DefaultOnState)
             ConnectPowerGrid();
     }
@@ -19,12 +24,17 @@ public class PowerGrid : MonoBehaviour
     void TurnOn()
     {
         ConnectPowerGrid();
+        _audioSource.pitch = -1;
+        _audioSource.PlayOneShot(PowerOff);
+
     }
 
     [ContextMenu("Turn Off")]
     void TurnOff()
     {
         DisconnectPowerGrid();
+        _audioSource.pitch = 1;
+        _audioSource.PlayOneShot(PowerOff);
     }
 
     public void ConnectRecieverToGrid(IPowerReciever reciever)
@@ -41,7 +51,7 @@ public class PowerGrid : MonoBehaviour
     public void DisconnectRecieverFromGrid(IPowerReciever reciever)
     {
         reciever.OnPowerConnectionLost();
-        
+
         if (PowerReceivers.Contains(reciever))
             PowerReceivers.Remove(reciever);
     }
@@ -56,5 +66,16 @@ public class PowerGrid : MonoBehaviour
     {
         IsOn = true;
         PowerReceivers.ForEach(a => a.OnPowerConnectionEstablished());
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            if (IsOn)
+                TurnOff();
+            else
+                TurnOn();
+        }
     }
 }
